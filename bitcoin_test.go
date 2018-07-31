@@ -29,5 +29,4 @@ func TestIsValidBitcoin(t *testing.T) {
 			t.Errorf("Address %s should be valid %s %s address", tc.address, tc.currency, tc.network)
 		}
 	}
-	t.Errorf("Dsd")
 }

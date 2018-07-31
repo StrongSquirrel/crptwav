@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/StrongSquirrel/crptwav/crypto"
+	"github.com/StrongSquirrel/crptwav/crypto/keccak256"
 )
 
 func isValidEthereumAddress(address string) bool {
@@ -32,7 +32,7 @@ func isValidEthereumAddress(address string) bool {
 func isValidChecksum(address string) bool {
 	address = strings.Replace(address, "0x", "", -1)
 
-	hash := hex.EncodeToString(crypto.Keccak256([]byte(strings.ToLower(address))))
+	hash := hex.EncodeToString(keccak256.Encode([]byte(strings.ToLower(address))))
 
 	for i := 0; i < 40; i++ {
 		num, _ := strconv.ParseInt(string(hash[i]), 16, 8)

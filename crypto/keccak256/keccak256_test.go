@@ -1,4 +1,4 @@
-package crypto
+package keccak256
 
 import (
 	"encoding/hex"
@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestKeccak256(t *testing.T) {
+func TestEncode(t *testing.T) {
 	tt := []struct {
 		desc   string
 		input  []byte
@@ -46,7 +46,7 @@ func TestKeccak256(t *testing.T) {
 		for i := 0; i < tc.repeat; i++ {
 			input = append(input, tc.input...)
 		}
-		got := strings.ToUpper(hex.EncodeToString(Keccak256(input)))
+		got := strings.ToUpper(hex.EncodeToString(Encode(input)))
 		if got != tc.want {
 			t.Errorf("%s, got %q, want %q", tc.desc, got, tc.want)
 		}
