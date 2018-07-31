@@ -3,6 +3,6 @@ go:
   - 1.9
   - 1.10
 install:
-  - go get -u golang.org/x/crypto/sha3
+  - go get golang.org/x/crypto/sha3
 script:
   - make test
