@@ -3,9 +3,8 @@ package crptwav
 import "strings"
 
 // IsValid validates the given currency address.
-// address - Wallet address to validate.
-// currency - Currency name or symbol, e.g. "bitcoin", "litecoin" or "ETH".
-// network - Use "prod" to enforce standard address, "testnet" to enforce
+// Currency can be a name or a symbol, e.g. "bitcoin", "litecoin" or "ETH".
+// Network can be "prod" to enforce standard address, "testnet" to enforce
 // testnet address and "both" to enforce nothing.
 func IsValid(address, currency, network string) bool {
 	nameOrSymbol := strings.ToLower(currency)

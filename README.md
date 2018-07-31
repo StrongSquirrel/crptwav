@@ -4,6 +4,10 @@ Simple wallet address validator for validating Bitcoin and other altcoins addres
 
 It is a port of JavaScript library [https://github.com/ognus/wallet-address-validator](https://github.com/ognus/wallet-address-validator).
 
+## Documentation
+
+[https://godoc.org/github.com/StrongSquirrel/crptwav](https://godoc.org/github.com/StrongSquirrel/crptwav)
+
 ## Example
 
 ```go
