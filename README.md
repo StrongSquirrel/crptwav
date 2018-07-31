@@ -11,7 +11,7 @@ package main
 
 import (
     "fmt"
-    "github.com/strsqr/crptwav"
+    "github.com/StrongSquirrel/crptwav"
 )
 
 func main() {
