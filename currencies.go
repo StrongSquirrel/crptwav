@@ -1,36 +1,67 @@
 package crptwav
 
+type addressTypes struct {
+	prod    []string
+	testnet []string
+}
+
+type currencyParams struct {
+	name           string
+	symbol         string
+	addressTypes   addressTypes
+	hashFunc       string
+	expectedLength int
+}
+
 type currency struct {
-	name      string
-	symbol    string
-	validator func(address, network string) bool
+	params    currencyParams
+	validator func(address, network string, params currencyParams) bool
 }
 
 // It defines P2PKH and P2SH address types for standard (prod)
 // and testnet networks.
 var currencies = []currency{
 	currency{
-		name:      "ethereum",
-		symbol:    "eth",
+		params: currencyParams{
+			name:   "bitcoin",
+			symbol: "btc",
+			addressTypes: addressTypes{
+				prod:    []string{"00", "05"},
+				testnet: []string{"6f", "c4"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
+			name:   "ethereum",
+			symbol: "eth",
+		},
 		validator: ethValidator,
 	},
 	currency{
-		name:      "etherzero",
-		symbol:    "etz",
+		params: currencyParams{
+			name:   "etherzero",
+			symbol: "etz",
+		},
 		validator: ethValidator,
 	},
 	currency{
-		name:      "ethereumclassic",
-		symbol:    "etc",
+		params: currencyParams{
+			name:   "ethereumclassic",
+			symbol: "etc",
+		},
 		validator: ethValidator,
 	},
 	currency{
-		name:      "callisto",
-		symbol:    "clo",
+		params: currencyParams{
+			name:   "callisto",
+			symbol: "clo",
+		},
 		validator: ethValidator,
 	},
 }
 
-func ethValidator(address, network string) bool {
-	return isValidETH(address)
+func ethValidator(address, network string, params currencyParams) bool {
+	return isValidEthereumAddress(address)
 }

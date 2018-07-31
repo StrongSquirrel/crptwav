@@ -9,7 +9,7 @@ import (
 	"github.com/StrongSquirrel/crptwav/crypto"
 )
 
-func isValidETH(address string) bool {
+func isValidEthereumAddress(address string) bool {
 	baseRequirements, _ := regexp.Compile("^0x[0-9a-fA-F]{40}$")
 	if !baseRequirements.MatchString(address) {
 		return false

@@ -2,7 +2,7 @@ package crptwav
 
 import "testing"
 
-func TestIsValid(t *testing.T) {
+func TestIsValidEthereum(t *testing.T) {
 	tt := []struct {
 		currency string
 		address  string

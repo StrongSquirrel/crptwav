@@ -9,8 +9,8 @@ import "strings"
 func IsValid(address, currency, network string) bool {
 	nameOrSymbol := strings.ToLower(currency)
 	for _, c := range currencies {
-		if c.name == nameOrSymbol || c.symbol == nameOrSymbol {
-			return c.validator(address, network)
+		if c.params.name == nameOrSymbol || c.params.symbol == nameOrSymbol {
+			return c.validator(address, network, c.params)
 		}
 	}
 	return false
