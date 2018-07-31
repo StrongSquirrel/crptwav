@@ -34,6 +34,17 @@ var currencies = []currency{
 	},
 	currency{
 		params: currencyParams{
+			name:   "bitcoincash",
+			symbol: "bch",
+			addressTypes: addressTypes{
+				prod:    []string{"00", "05"},
+				testnet: []string{"6f", "c4"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "ethereum",
 			symbol: "eth",
 		},

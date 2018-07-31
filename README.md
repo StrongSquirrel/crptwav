@@ -28,8 +28,8 @@ func main() {
 - [ ] Auroracoin/AUR, `'auroracoin'` or `'AUR'`
 - [ ] BeaverCoin/BVC, `'beavercoin'` or `'BVC'`
 - [ ] Biocoin/BIO, `'biocoin'` or `'BIO'`
-- [ ] Bitcoin/BTC, `'bitcoin'` or `'BTC'`
-- [ ] BitcoinCash/BCH, `'bitcoincash'` or `'BCH'`
+- [x] Bitcoin/BTC, `'bitcoin'` or `'BTC'`
+- [x] BitcoinCash/BCH, `'bitcoincash'` or `'BCH'`
 - [ ] BitcoinGold/BTG, `'bitcoingold'` or `'BTG'`
 - [ ] BitcoinPrivate/BTCP, `'bitcoinprivate'` or `'BTCP'`
 - [ ] BitcoinZ/BTCZ, `'bitcoinz'` or `'BTCZ'`

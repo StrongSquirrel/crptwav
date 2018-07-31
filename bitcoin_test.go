@@ -20,6 +20,7 @@ func TestIsValidBitcoin(t *testing.T) {
 		{address: "mzBc4XEFSdzCDcTxAgf6EZXgsZWpztRhef", currency: "bitcoin", network: "both"},
 		{address: "1SQHtwR5oJRKLfiWQ2APsAd9miUc4k2ez", currency: "bitcoin", network: "prod"},
 		{address: "116CGDLddrZhMrTwhCVJXtXQpxygTT1kHd", currency: "bitcoin", network: "prod"},
+
 		// p2sh addresses
 		// invalid {address: "3NJZLcZEEYBpxYEUGewU4knsQRn1WM5Fkt", currency: "bitcoint", network: "prod"},
 		{address: "2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7", currency: "bitcoin", network: "testnet"},
