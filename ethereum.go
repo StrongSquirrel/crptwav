@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/strsqr/crptwav/crypto"
+	"github.com/StrongSquirrel/crptwav/crypto"
 )
 
 func isValidETH(address string) bool {
