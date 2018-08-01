@@ -37,7 +37,7 @@ func main() {
 - [ ] Dash, `'dash'` or `'DASH'`
 - [ ] Decred/DCR, `'decred'` or `'DCR'`
 - [ ] Digibyte/DGB, `'digibyte'` or `'DGB'`
-- [ ] Dogecoin/DOGE, `'dogecoin'` or `'DOGE'`
+- [x] Dogecoin/DOGE, `'dogecoin'` or `'DOGE'`
 - [x] Ethereum/ETH, `'ethereum'` or `'ETH'`
 - [x] EthereumClassic/ETH, `'ethereumclassic'` or `'ETC'`
 - [x] EthereumZero/ETZ, `'etherzero'` or `'ETZ'`

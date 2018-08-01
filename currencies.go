@@ -67,6 +67,17 @@ var currencies = []currency{
 	},
 	currency{
 		params: currencyParams{
+			name:   "dogecoin",
+			symbol: "doge",
+			addressTypes: addressTypes{
+				prod:    []string{"1e", "16"},
+				testnet: []string{"71", "c4"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "ethereum",
 			symbol: "eth",
 		},
