@@ -15,9 +15,9 @@ func isValidBitcoinAddress(address, network string, params currencyParams) bool 
 
 	var addressTypes []string
 	switch network {
-	case "prod":
+	case NetworkProd:
 		addressTypes = params.addressTypes.prod
-	case "testnet":
+	case NetworkTest:
 		addressTypes = params.addressTypes.testnet
 	default:
 		addressTypes = append(params.addressTypes.prod, params.addressTypes.testnet...)

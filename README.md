@@ -19,7 +19,17 @@ import (
 )
 
 func main() {
-    fmt.Println(crptwav.IsValid("0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF", "ETH", "both"))
+	fmt.Println(crptwav.IsValidAddress("0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF", "ETH"))
+	fmt.Println(crptwav.IsValidAddress("12KYrjTdVGjFMtaxERSk3gphreJ5US8aUP", "Bitcoin"))
+	fmt.Println(crptwav.IsValidProdAddress("12KYrjTdVGjFMtaxERSk3gphreJ5US8aUP", "Bitcoin"))
+	fmt.Println(crptwav.IsValidTestnetAddress("mzBc4XEFSdzCDcTxAgf6EZXgsZWpztRhef", "BTC"))
+	fmt.Println(crptwav.IsValidProdAddress("mzBc4XEFSdzCDcTxAgf6EZXgsZWpztRhef", "BTC"))
+	// Output:
+	// true
+	// true
+	// true
+	// true
+	// false
 }
 ```
 

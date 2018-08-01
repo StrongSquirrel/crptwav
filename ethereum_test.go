@@ -27,7 +27,7 @@ func TestIsValidEthereum(t *testing.T) {
 		{address: "0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb", currency: "CLO"},
 	}
 	for _, tc := range tt {
-		if !IsValid(tc.address, tc.currency, "both") {
+		if !IsValidAddress(tc.address, tc.currency) {
 			t.Errorf("Address %s should be valid %s address", tc.address, tc.currency)
 		}
 	}

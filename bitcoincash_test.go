@@ -24,8 +24,19 @@ func TestIsValidBitcoinCash(t *testing.T) {
 		{address: "2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7", currency: "bitcoincash", network: "testnet"},
 	}
 	for _, tc := range tt {
-		if !IsValid(tc.address, tc.currency, tc.network) {
-			t.Errorf("Address %s should be valid %s %s address", tc.address, tc.currency, tc.network)
+		switch tc.network {
+		case NetworkProd:
+			if !IsValidProdAddress(tc.address, tc.currency) {
+				t.Errorf("Address %s should be valid %s %s address", tc.address, tc.currency, tc.network)
+			}
+		case NetworkTest:
+			if !IsValidTestnetAddress(tc.address, tc.currency) {
+				t.Errorf("Address %s should be valid %s %s address", tc.address, tc.currency, tc.network)
+			}
+		default:
+			if !IsValidAddress(tc.address, tc.currency) {
+				t.Errorf("Address %s should be valid %s %s address", tc.address, tc.currency, tc.network)
+			}
 		}
 	}
 }
