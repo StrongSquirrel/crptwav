@@ -50,7 +50,7 @@ func main() {
 - [ ] Namecoin/NMC, `'namecoin'` or `'NMC'`
 - [ ] NEO/NEO, `'NEO'` or `'NEO'`
 - [ ] NeoGas/GAS, `'neogas'` or `'GAS'`
-- [ ] Peercoin/PPCoin/PPC, `'peercoin'` or `'PPC'`
+- [x] Peercoin/PPCoin/PPC, `'peercoin'` or `'PPC'`
 - [ ] Primecoin/XPM, `'primecoin'` or `'XPM'`
 - [ ] Protoshares/PTS, `'protoshares'` or `'PTS'`
 - [ ] Qtum/QTUM, `'qtum'` or `'QTUM'`

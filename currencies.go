@@ -56,6 +56,17 @@ var currencies = []currency{
 	},
 	currency{
 		params: currencyParams{
+			name:   "peercoin",
+			symbol: "ppc",
+			addressTypes: addressTypes{
+				prod:    []string{"37", "75"},
+				testnet: []string{"6f", "c4"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "ethereum",
 			symbol: "eth",
 		},
