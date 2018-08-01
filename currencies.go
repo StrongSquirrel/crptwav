@@ -45,6 +45,17 @@ var currencies = []currency{
 	},
 	currency{
 		params: currencyParams{
+			name:   "litecoin",
+			symbol: "ltc",
+			addressTypes: addressTypes{
+				prod:    []string{"30", "05", "32"},
+				testnet: []string{"6f", "c4", "3a"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "ethereum",
 			symbol: "eth",
 		},

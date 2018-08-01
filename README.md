@@ -45,7 +45,7 @@ func main() {
 - [ ] Garlicoin/GRLC, `'garlicoin'` or `'GRLC'`
 - [ ] Hush/HUSH, `'hush'` or `'HUSH'`
 - [ ] Komodo/KMD, `'komodo'` or `'KMD'`
-- [ ] Litecoin/LTC, `'litecoin'` or `'LTC'`
+- [x] Litecoin/LTC, `'litecoin'` or `'LTC'`
 - [ ] Megacoin/MEC, `'megacoin'` or `'MEC'`
 - [ ] Namecoin/NMC, `'namecoin'` or `'NMC'`
 - [ ] NEO/NEO, `'NEO'` or `'NEO'`
