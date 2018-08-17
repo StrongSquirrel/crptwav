@@ -40,7 +40,7 @@ func main() {
 - [x] Biocoin/BIO, `'biocoin'` or `'BIO'`
 - [x] Bitcoin/BTC, `'bitcoin'` or `'BTC'`
 - [x] BitcoinCash/BCH, `'bitcoincash'` or `'BCH'`
-- [ ] BitcoinGold/BTG, `'bitcoingold'` or `'BTG'`
+- [x] BitcoinGold/BTG, `'bitcoingold'` or `'BTG'`
 - [ ] BitcoinPrivate/BTCP, `'bitcoinprivate'` or `'BTCP'`
 - [ ] BitcoinZ/BTCZ, `'bitcoinz'` or `'BTCZ'`
 - [x] Callisto/CLO, `'callisto'` or `'CLO'`
