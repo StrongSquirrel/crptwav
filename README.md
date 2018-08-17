@@ -44,7 +44,7 @@ func main() {
 - [ ] BitcoinPrivate/BTCP, `'bitcoinprivate'` or `'BTCP'`
 - [ ] BitcoinZ/BTCZ, `'bitcoinz'` or `'BTCZ'`
 - [x] Callisto/CLO, `'callisto'` or `'CLO'`
-- [ ] Dash, `'dash'` or `'DASH'`
+- [x] Dash, `'dash'` or `'DASH'`
 - [ ] Decred/DCR, `'decred'` or `'DCR'`
 - [ ] Digibyte/DGB, `'digibyte'` or `'DGB'`
 - [x] Dogecoin/DOGE, `'dogecoin'` or `'DOGE'`

@@ -89,6 +89,17 @@ var currencies = []currency{
 	},
 	currency{
 		params: currencyParams{
+			name:   "dash",
+			symbol: "dash",
+			addressTypes: addressTypes{
+				prod:    []string{"4c", "10"},
+				testnet: []string{"8c", "13"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "litecoin",
 			symbol: "ltc",
 			addressTypes: addressTypes{
