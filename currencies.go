@@ -45,6 +45,17 @@ var currencies = []currency{
 	},
 	currency{
 		params: currencyParams{
+			name:   "biocoin",
+			symbol: "bio",
+			addressTypes: addressTypes{
+				prod:    []string{"19", "14"},
+				testnet: []string{"6f", "c4"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "bitcoin",
 			symbol: "btc",
 			addressTypes: addressTypes{

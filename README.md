@@ -37,7 +37,7 @@ func main() {
 
 - [x] Auroracoin/AUR, `'auroracoin'` or `'AUR'`
 - [x] BeaverCoin/BVC, `'beavercoin'` or `'BVC'`
-- [ ] Biocoin/BIO, `'biocoin'` or `'BIO'`
+- [x] Biocoin/BIO, `'biocoin'` or `'BIO'`
 - [x] Bitcoin/BTC, `'bitcoin'` or `'BTC'`
 - [x] BitcoinCash/BCH, `'bitcoincash'` or `'BCH'`
 - [ ] BitcoinGold/BTG, `'bitcoingold'` or `'BTG'`
