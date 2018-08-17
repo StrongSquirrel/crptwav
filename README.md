@@ -35,7 +35,7 @@ func main() {
 
 ### Supported crypto currencies (todo)
 
-- [ ] Auroracoin/AUR, `'auroracoin'` or `'AUR'`
+- [x] Auroracoin/AUR, `'auroracoin'` or `'AUR'`
 - [ ] BeaverCoin/BVC, `'beavercoin'` or `'BVC'`
 - [ ] Biocoin/BIO, `'biocoin'` or `'BIO'`
 - [x] Bitcoin/BTC, `'bitcoin'` or `'BTC'`
