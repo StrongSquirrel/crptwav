@@ -23,6 +23,17 @@ type currency struct {
 var currencies = []currency{
 	currency{
 		params: currencyParams{
+			name:   "auroracoin",
+			symbol: "aur",
+			addressTypes: addressTypes{
+				prod:    []string{"17", "05"},
+				testnet: []string{"6f", "c4"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "bitcoin",
 			symbol: "btc",
 			addressTypes: addressTypes{
