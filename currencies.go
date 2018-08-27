@@ -133,6 +133,47 @@ var currencies = []currency{
 	},
 	currency{
 		params: currencyParams{
+			name:   "bitcore",
+			symbol: "btx",
+			addressTypes: addressTypes{
+				prod:    []string{"03", "7D"},
+				testnet: []string{"6F", "c4"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
+			name:   "bitsend",
+			symbol: "bsd",
+			addressTypes: addressTypes{
+				prod:    []string{"66", "05"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
+			name:   "bitcloud",
+			symbol: "btdx",
+			addressTypes: addressTypes{
+				prod:    []string{"19", "05"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
+			name:   "megacoin",
+			symbol: "mec",
+			addressTypes: addressTypes{
+				prod:    []string{"32", "05"},
+			},
+		},
+		validator: isValidBitcoinAddress,
+	},
+	currency{
+		params: currencyParams{
 			name:   "ethereum",
 			symbol: "eth",
 		},
