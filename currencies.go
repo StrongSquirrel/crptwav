@@ -137,7 +137,7 @@ var currencies = []currency{
 			symbol: "btx",
 			addressTypes: addressTypes{
 				prod:    []string{"03", "7D"},
-				testnet: []string{"6F", "c4"},
+				testnet: []string{"6f", "c4"},
 			},
 		},
 		validator: isValidBitcoinAddress,
