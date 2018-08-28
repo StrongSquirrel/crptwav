@@ -38,11 +38,14 @@ func main() {
 - [x] Auroracoin/AUR, `'auroracoin'` or `'AUR'`
 - [x] BeaverCoin/BVC, `'beavercoin'` or `'BVC'`
 - [x] Biocoin/BIO, `'biocoin'` or `'BIO'`
+- [x] Bitcloud/BTDX, `'bitcloud'` or `'BTDX'`
 - [x] Bitcoin/BTC, `'bitcoin'` or `'BTC'`
 - [x] BitcoinCash/BCH, `'bitcoincash'` or `'BCH'`
 - [x] BitcoinGold/BTG, `'bitcoingold'` or `'BTG'`
 - [ ] BitcoinPrivate/BTCP, `'bitcoinprivate'` or `'BTCP'`
 - [ ] BitcoinZ/BTCZ, `'bitcoinz'` or `'BTCZ'`
+- [x] Bitcore/BTX, `'bitcore'` or `'BTX'`
+- [x] Bitsend/BSD, `'bitsend'` or `'BSD'`
 - [x] Callisto/CLO, `'callisto'` or `'CLO'`
 - [x] Dash, `'dash'` or `'DASH'`
 - [ ] Decred/DCR, `'decred'` or `'DCR'`
@@ -56,7 +59,7 @@ func main() {
 - [ ] Hush/HUSH, `'hush'` or `'HUSH'`
 - [ ] Komodo/KMD, `'komodo'` or `'KMD'`
 - [x] Litecoin/LTC, `'litecoin'` or `'LTC'`
-- [ ] Megacoin/MEC, `'megacoin'` or `'MEC'`
+- [x] Megacoin/MEC, `'megacoin'` or `'MEC'`
 - [ ] Namecoin/NMC, `'namecoin'` or `'NMC'`
 - [ ] NEO/NEO, `'NEO'` or `'NEO'`
 - [ ] NeoGas/GAS, `'neogas'` or `'GAS'`
